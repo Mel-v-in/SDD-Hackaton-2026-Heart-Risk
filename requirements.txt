@@ -17,3 +17,5 @@ lxml
 jupyterlab
 ipykernel
 kaggle
+scipy
+statsmodels
