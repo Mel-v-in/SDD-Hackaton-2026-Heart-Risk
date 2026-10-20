@@ -218,3 +218,28 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# ---- Heart Risk : projet ----
+# Donnees de la competition : jamais versionnees (taille > 100 Mo GitHub, pas de redistribution)
+data/*
+!data/.gitkeep
+train.csv
+test.csv
+extra.csv
+sample_submission.csv
+
+# Sorties de modeles : ignorees, sauf le journal d'experiences
+outputs/*
+!outputs/.gitkeep
+!outputs/experiments.csv
+
+# Artefacts de calcul
+*.parquet
+*.npy
+*.pkl
+*.joblib
+catboost_info/
+
+# Divers
+.DS_Store
+kaggle.json
