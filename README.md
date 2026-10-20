@@ -35,7 +35,7 @@ unzip -o "data/*.zip" -d data/
 ## Principes de travail
 
 - Même pipeline de nettoyage appliqué à train, extra et test.
-- `random_state=42` partout, 5 folds stratifiés sur train + extra.
+- `random_state=42` partout, 5 folds stratifiés, validation sur les lignes de train (seules représentatives de test : extra vient d'autres États, voir `docs/eda_findings.md`).
 - Aucun fit (imputer, scaler, target encoding) en dehors des folds d'entraînement.
 - Seuil de décision choisi sur les prédictions OOF, jamais sur le leaderboard.
 - Aucune donnée externe BRFSS jointe (règle de la compétition).
